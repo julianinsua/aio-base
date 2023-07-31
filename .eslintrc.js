@@ -4,7 +4,7 @@ module.exports = {
         commonjs: true,
         es2021: true,
     },
-    extends:[  "standard-with-typescript", "prettier"],
+    extends: ["standard-with-typescript", "prettier"],
     overrides: [
         {
             env: {
@@ -24,7 +24,7 @@ module.exports = {
         tsconfigRootDir: __dirname,
     },
     rules: {
-        indent: ["warn", 2],
+        indent: ["warn", "tab"],
         "@typescript-eslint/strict-boolean-expressions": "warn",
     },
 };
