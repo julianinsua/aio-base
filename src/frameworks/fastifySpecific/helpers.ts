@@ -14,7 +14,7 @@ export const normalizeFastifyRequest = (req: FastifyRequest): requestInterface =
 	return request
 }
 
-const throwAuthError = (): void => {
+export const throwAuthError = (): void => {
 	thrower(
 		"notAuthenticated",
 		"the endpoint you are trying to acces requires an authentication token",
